@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Declinator</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html" class="button">The Declinator</a>
+    <a href="table.html" class="button">The Table</a>
+  </div>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <h1>The Declinator</h1>
+    <h4>Albert Einstein once said: "A table, a chair, a bowl of fruit, and a violin; what else does a man need to be happy?"</h4>
+    <h4>The answer: An understanding of German grammar!</h4>
+  </section>
+
+  <!-- Declination Form -->
+  <section class="declination-form">
+    <h2>The Declinator:</h2>
+    <form id="nounForm">
+      <!-- Case Selection -->
+      <label>What case is the noun in?</label><br>
+      <input type="radio" id="nominative" name="case" value="Nominative">
+      <label for="nominative">Nominative</label><br>
+      <input type="radio" id="accusative" name="case" value="Accusative">
+      <label for="accusative">Accusative</label><br>
+      <input type="radio" id="dative" name="case" value="Dative">
+      <label for="dative">Dative</label><br>
+      <input type="radio" id="genitive" name="case" value="Genitive">
+      <label for="genitive">Genitive</label><br><br>
+
+      <!-- Gender Selection -->
+      <label>What is the gender/plurality of the noun?</label><br>
+      <input type="radio" id="masculine" name="gender" value="Masculine">
+      <label for="masculine">Masculine</label><br>
+      <input type="radio" id="feminine" name="gender" value="Feminine">
+      <label for="feminine">Feminine</label><br>
+      <input type="radio" id="neuter" name="gender" value="Neuter">
+      <label for="neuter">Neuter</label><br>
+      <input type="radio" id="plural" name="gender" value="Plural">
+      <label for="plural">Plural</label><br><br>
+
+      <!-- Article Selection -->
+      <label>What is the article?</label><br>
+      <input type="radio" id="definite" name="article" value="Definite">
+      <label for="definite">Definite</label><br>
+      <input type="radio" id="indefinite" name="article" value="Indefinite">
+      <label for="indefinite">Indefinite</label><br>
+      <input type="radio" id="no_article" name="article" value="No article">
+      <label for="no_article">No article</label><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Result Section -->
+  <section class="result">
+    <h3>Declension</h3>
+    <div id="result">
+      <p>Use this: <span id="resultLine">[Result will appear here]</span></p>
+      <p>Example Sentence: <span id="exampleSentence">[Example sentence will appear here]</span></p>
+    </div>
+  </section>
+
+  <!-- Additional Information Section -->
+  <section class="butwait">
+    <h2>But wait...there's more!</h2>
+    <p>Because I don't know enough about how to properly code a website, the Declinator doesn't have a little notification box pop up to tell you if there's anything else you need to do to your noun in some of the cases. Sorry about that. So you'll just have to remember a few (relatively simple) rules:</p>
+    <ul>
+      <li>For <strong>plurals</strong> in the <strong>dative case</strong>, you must <strong>add “n”</strong> at the end of the noun, e.g. Kinder - Kinder<strong>n</strong></li>
+      <li>For <strong>masculine nouns</strong> in the <strong>genitive case</strong>, you must <strong>add “es”</strong> (usually to one-syllable words) or <strong>add “s”</strong> (longer words), e.g. Mann - Mann<strong>es</strong></li>
+      <li>For <strong>neuter nouns</strong> in the <strong>genitive case</strong>, you must <strong>add “es”</strong> (usually to one-syllable words) or <strong>add “s”</strong> (longer words), e.g. Haus - Haus<strong>es</strong></li>
+    </ul>
+  </section>
+
+  <!-- Table Section -->
+  <table class="anothertable">
+    <thead>
+      <tr>
+        <th>Common Masculine Endings</th>
+        <th>Common Feminine Endings</th>
+        <th>Common Neuter Endings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li>ant (e.g. der Konsonant)</li>
+            <li>ast (e.g. der Kontrast)</li>
+            <li>ich (e.g. der Teppich)</li>
+            <li>ig (e.g. der Käfig)</li>
+            <li>ling (e.g. der Frühling)</li>
+            <li>or (e.g. der Faktor)</li>
+            <li>us (e.g. der Zirkus)</li>
+          </ul>
+          <p><strong>Note:</strong> no feminine nouns end in –en, so these words are either masculine or neuter (e.g. der Hafen, das Essen)</p>
+          <p><strong>Another note:</strong> these lists are a guide and there are always exceptions. Please use this as a <em>guide.</em></p>
+        </td>
+        <td>
+          <ul>
+            <li>a (e.g. die Pizza)</li>
+            <li>anz (e.g. die Dissonanz)</li>
+            <li>enz (e.g. die Frequenz)</li>
+            <li>ei (e.g. die Konditorei)</li>
+            <li>ie (e.g. die Demokratie)</li>
+            <li>heit (e.g. die Möglichkeit)</li>
+            <li>ik (e.g. die Musik)</li>
+            <li>sion (e.g. die Explosion)</li>
+            <li>tion (e.g. die Revolution)</li>
+            <li>sis (e.g. die Basis)</li>
+            <li>tät (e.g. die Realität)</li>
+            <li>ung (e.g. die Prüfung)</li>
+            <li>ur (e.g. die Prozedur)</li>
+            <li>schaft (e.g. die Freundschaft)</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>chen (e.g. das Mädchen)</li>
+            <li>lein (e.g. das Fräulein)</li>
+            <li>icht (e.g. das Dickicht)</li>
+            <li>il (e.g. das Ventil)</li>
+            <li>it (e.g. das Dynamit)</li>
+            <li>ma (e.g. das Schema)</li>
+            <li>ment (e.g. das Experiment)</li>
+            <li>tel (e.g. das Viertel)</li>
+            <li>tum (e.g. das Christentum)</li>
+            <li>um (e.g. das Museum)</li>
+            <li>al (e.g. das Lineal)</li>
+            <li>an (e.g. das Organ)</li>
+            <li>ar (e.g. das Formular)</li>
+            <li>at (e.g. das Sekretariat)</li>
+            <li>ent (e.g. das Talent)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Quote Section -->
+  <section class="LaoTzu">
+    <h2><em>"When the student is ready, the teacher appears; and when the student is truly ready, the teacher disappears."</em></h2>
+    <h3>-A quote the internet thinks is from Lao Tzu (but actually isn't)</h3>
+    <p>Hate looking at this clunky, eye-assaultingly, poorly-coded website? Learn the rules off by heart! Some flashcards might help - here's some I prepared earlier:</p>
+    <a href="https://quizlet.com/au/990289593/german-grammar-articles-by-gender-and-case-flash-cards/?funnelUUID=53f5f42c-9d4f-40b0-a12e-811272a571e0">Declinator flashcards</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><em>The Declinator</em> version 1.2. Created by Lauren Stallard. Questions? Feedback? Suggestions? Send them to <a href="mailto:lauren.stallard@outlook.com">lauren.stallard@outlook.com</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
